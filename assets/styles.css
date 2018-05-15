@@ -76,15 +76,14 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 
 .top h2 {font-size: 28px;}
 
-/* .hero-image-shadow-fix {
+.hero-image-shadow-fix {
   clear: left;
   width: 100%;
-  height: 30px;
+  height: 100vh;
   z-index: 3;
   box-shadow: inset 0 7px 20px -7px rgba(0,0,0,0.4);
-  position: relative;
-  margin-bottom: -30px;
-} */
+  position: absolute;
+}
 
 .bottom {
   clear: left;
@@ -104,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   padding: 15px 2px 0px 2px;
   height: calc(100vh - 15px);
   overflow-y: scroll;
+  background: #31435F;
 }
 
 .bottom .side-bar::after {
