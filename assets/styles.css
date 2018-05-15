@@ -1,3 +1,5 @@
+/*clear*/
+/**/
 /*utilty classes*/
   .helvetica {font-family: Dosis,'Helvetica Neue',Arial,Helvetica,sans-serif;}
   .open-sans {font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,sans-serif;}
@@ -5,131 +7,182 @@
   .bold {font-weight: bold}
   .weird-green {color: #27B5A9}
 /**/
+:root {
+  --max-width: 1200px;
+  --top-bar-height: 400px;
+  --sidebar-width: 300px;
+  --dyrt-blue: #31435F;
+}
 
-html, body {
+html {
   margin: 0;
   padding: 0;
-  background-color: #31435F;
+  background-color: var(--dyrt-blue);
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
   counter-reset: item;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
 }
 
-.bg {
+.page-content {
+  max-width: var(--max-width);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  top: var(--top-bar-height);
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.page-content .side-bar {
+  position: relative;
+  width: 100%;
+  max-width: var(--sidebar-width);
+}
+
+.page-content .map {
+  width: calc(var(--max-width) - var(--sidebar-width));
+  overflow: hidden;
+
+  height: 100vh;
+  background: grey;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/popular-memes/48/JD-10-512.png);
+  background-size: cover;
+
+  /* required for Safari */
+  position: -webkit-sticky;
+  position: sticky;
+  /* required as well. */
+  top: 0;
+}
+
+.top-bar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--top-bar-height);
   background-image: url(https://media.bizj.us/view/img/6778422/tfnw-2015-img3151*1200xx3264-1836-0-306.jpg);
   background-size: cover;
-  background-position: center bottom;
-  min-height: 550px;
-  width:100%;
-  position: absolute;
-  top:0;
-  left: 0;
-  z-index: 0;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
 }
 
-.wrapper {
+/* .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center bottom;
+  min-height: 400px;
+  width:100%;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+} */
 
-.side-bar {
+/* .side-bar {
   width: 100%;
   max-width: 300px;
-  /* border: 1px solid white; */
-  float:left;
-}
+  border: 1px solid white;
+  float: left;
+} */
 
-.map {
+/* .map {
   max-width: 892px;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   margin-left: 308px;
   height: 100vh;
   background: grey;
   background-image: url(https://cdn3.iconfinder.com/data/icons/popular-memes/48/JD-10-512.png);
   background-size: cover;
-  /* opacity: .1; */
-}
+  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top: 0; // required as well.
+} */
 
-.side-bar-top {
-  padding: 80px 0 111px 0;
+/* .side-bar-top {
+  padding: 40px 0 0 0;
   text-shadow: 0 0 .5em rgba(0,0,0,.7);
-}
+} */
 
-.small-header-text {
+/* .small-header-text {
   top: 15px;
   display: block;
   position: relative;
-}
+} */
 
-.top {
+/* .top {
   text-align: center;
   line-height: 10px;
   color: white;
-}
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 
-h1, h2, h3, h4, h5, h6 {font-weight: 600}
+/* h1, h2, h3, h4, h5, h6 {font-weight: 600} */
 
-.top h1 {font-size: 4em;}
+/* .top h1 {font-size: 4em;} */
 
-.top h2 {font-size: 28px;}
+/* .top h2 {font-size: 28px;} */
 
-.hero-image-shadow-fix {
-  clear: left;
+/* .hero-image-shadow-fix {
   width: 100%;
   height: 100vh;
-  z-index: 3;
   box-shadow: inset 0 7px 20px -7px rgba(0,0,0,0.4);
   position: absolute;
-}
+} */
 
-.bottom {
-  clear: left;
+/* .bottom {
   width: 100%;
   height: 100vh;
   background-color: #31435F;
-  z-index: 2;
   position: relative;
-  /* border-top: 2px solid white; */
-}
+  padding-top: 400px;
+} */
 
-.bottom .side-bar {
+/* .bottom .side-bar {
   border-right:2px solid white;
   border-left:2px solid white;
   position: relative;
-  /* padding: 15px 2px 15px 2px; */
   padding: 15px 2px 0px 2px;
   height: calc(100vh - 15px);
-  overflow-y: scroll;
   background: #31435F;
-}
+} */
 
-.bottom .side-bar::after {
+/* .bottom .side-bar::after {
   content: "";
   position: absolute;
   bottom: 0; top: 0px; left: 0; right: 0;
   border-top: 15px solid #F5B536;
-  /* border-bottom: 15px solid #27B5A9; */
-}
+} */
 
-.bottom-wrapper {
+/* .bottom-wrapper {
   box-shadow: 0 0 20px rgba(0,0,0,.4);
   -moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
   -o-box-shadow: 0 0 20px rgba(0,0,0,.4);
   position: relative;
   z-index: 4;
-}
+} */
 
-.bottom-wrapper .side-bar ol {
+/* .bottom-wrapper .side-bar ol {
   color: #F5B536;
   list-style: none;
   margin-top: -45px;
-}
+} */
 
-.bottom-wrapper .side-bar ol li {
+/* .bottom-wrapper .side-bar ol li {
   counter-increment: item;
   margin-bottom: -55px;
 }
@@ -205,11 +258,13 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 .company-info p {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
-/*Media Queries*/
 
-@media screen and (max-width: 850px) {
+
+/************************************Media Queries************************************/
+
+/* @media screen and (max-width: 850px) {
   .bottom-wrapper .side-bar {
     display: none
   }
@@ -247,4 +302,4 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     margin-left: 8px;
     left: 0;
   }
-}
+} */
