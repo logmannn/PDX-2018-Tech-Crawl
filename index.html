@@ -6,6 +6,8 @@
   <title>2018 PDX Tech Crawl</title>
   <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/styles.css">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="assets/map-styles.css">
 </head>
 
 <body>
@@ -156,18 +158,18 @@
       </ol>
     </div>
 
-    <div class="map">
-        <center class="smaller-screen-item">
-          <div class="company-number">
-            <p>21</p>
-          </div>
-          <div class="company-info">
-            <p class="address">220 NW 8th Ave</p>
-            <p class="special-instructions">-Enter through the east side door off 9th & Washington.</p>
-            <p class="company">Marquam</p>
-          </div>
-        </center>
-      </div>
+    <div class="map" id='techcrawl-map'>
+    </div>
+    <!-- <center class="smaller-screen-item">
+    <div class="company-number">
+    <p>21</p>
+  </div>
+  <div class="company-info">
+  <p class="address">220 NW 8th Ave</p>
+  <p class="special-instructions">-Enter through the east side door off 9th & Washington.</p>
+  <p class="company">Marquam</p>
+</div>
+</center> -->
   </div>
 
   <div class="top-bar">
@@ -186,5 +188,7 @@
     </div>
 
   </div>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+  <script src='assets/js/app.js'></script>
 </body>
 </html>

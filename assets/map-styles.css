@@ -1,0 +1,11 @@
+.mapboxgl-marker {
+  /* background-color: lime; */
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; */
+  color: white;
+  padding-left: 8px;
+  font-size: 17px;
+  padding-top: 3px;  
+}

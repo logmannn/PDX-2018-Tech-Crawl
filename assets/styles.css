@@ -55,10 +55,9 @@ body {
 .page-content .map {
   width: calc(var(--max-width) - var(--sidebar-width));
   overflow: hidden;
-
   height: 100vh;
   background: grey;
-  background-image: url(https://cdn3.iconfinder.com/data/icons/popular-memes/48/JD-10-512.png);
+  /* background-image: url(https://cdn3.iconfinder.com/data/icons/popular-memes/48/JD-10-512.png); */
   background-size: cover;
 
   /* required for Safari */
@@ -111,9 +110,14 @@ body {
   top: 0; // required as well.
 } */
 
-/* .side-bar-top {
+.side-bar-top {
+  max-width: 300px;
   padding: 40px 0 0 0;
   text-shadow: 0 0 .5em rgba(0,0,0,.7);
+}
+
+/* .side-bar-top {
+
 } */
 
 /* .small-header-text {
@@ -122,17 +126,17 @@ body {
   position: relative;
 } */
 
-/* .top {
+.top {
   text-align: center;
   line-height: 10px;
   color: white;
   max-width: 1200px;
   margin: 0 auto;
-} */
+}
 
-/* h1, h2, h3, h4, h5, h6 {font-weight: 600} */
+h1, h2, h3, h4, h5, h6 {font-weight: 600}
 
-/* .top h1 {font-size: 4em;} */
+.top h1 {font-size: 4em;}
 
 /* .top h2 {font-size: 28px;} */
 
@@ -151,14 +155,14 @@ body {
   padding-top: 400px;
 } */
 
-/* .bottom .side-bar {
+.page-content .side-bar {
   border-right:2px solid white;
-  border-left:2px solid white;
+  border-left: 2px solid white;
   position: relative;
   padding: 15px 2px 0px 2px;
-  height: calc(100vh - 15px);
+  /* height: calc(100vh - 15px); */
   background: #31435F;
-} */
+}
 
 /* .bottom .side-bar::after {
   content: "";
@@ -167,7 +171,7 @@ body {
   border-top: 15px solid #F5B536;
 } */
 
-/* .bottom-wrapper {
+/* .page-content {
   box-shadow: 0 0 20px rgba(0,0,0,.4);
   -moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
@@ -176,33 +180,34 @@ body {
   z-index: 4;
 } */
 
-/* .bottom-wrapper .side-bar ol {
+.page-content .side-bar ol {
   color: #F5B536;
   list-style: none;
   margin-top: -45px;
-} */
-
-/* .bottom-wrapper .side-bar ol li {
-  counter-increment: item;
-  margin-bottom: -55px;
+  margin-bottom: 0;
 }
 
-.bottom-wrapper .side-bar ol li div {
+.page-content .side-bar ol li {
+  counter-increment: item;
+  margin-top: -50px;
+}
+
+.page-content .side-bar ol li div {
   margin-left: 15px;
   padding-right: 12px;
 }
 
-.bottom-wrapper .side-bar ol li div p {
+.page-content .side-bar ol li div p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.bottom-wrapper .side-bar ol li::before {
+.page-content .side-bar ol li::before {
   margin-right: 0px;
   content: counter(item);
   background-image: url(https://email-assets.thedyrt.com/2017/images/number-icon.png);
   color: white;
-  width: 1.96em;
+  width: 2em;
   text-align: center;
   display: inline-block;
   line-height: 53px;
@@ -258,14 +263,14 @@ body {
 .company-info p {
   margin-top: 0;
   margin-bottom: 0;
-} */
+}
 
 
 
 /************************************Media Queries************************************/
 
-/* @media screen and (max-width: 850px) {
-  .bottom-wrapper .side-bar {
+@media screen and (max-width: 850px) {
+  .page-content .side-bar {
     display: none
   }
 
@@ -302,4 +307,4 @@ body {
     margin-left: 8px;
     left: 0;
   }
-} */
+}
