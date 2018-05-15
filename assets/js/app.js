@@ -1,53 +1,5 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoidGhlZHlydCIsImEiOiJjamg4NXE1aGQwZno5MnFwY2lmZHZ5NjJvIn0.O39NoR8r4VqzVRbFZ_yJDQ';
-var geojson = {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "message": "Foo",
-                "iconSize": [50, 50],
-                "title": "Mapbox SF",
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.6801,45.5248
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "message": "Bar",
-                "iconSize": [50, 50],
-                "title": "Mapbox SF",
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.670719,
-                    45.522955
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "message": "Baz",
-                "iconSize": [50, 50],
-                "title": "Mapbox SF",
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -63.29223632812499,
-                    -18.28151823530889
-                ]
-            }
-        }
-    ]
-};
+
 var map = new mapboxgl.Map({
   container: 'techcrawl-map',
   style: 'mapbox://styles/thedyrt/cjh6x4ls709to2rlge6htq6z1',
@@ -79,25 +31,40 @@ map.addControl(geoControl, 'top-left');
   // 45.5229591,-122.672913
 
 
-  var geocount = 0;
-  geojson.features.forEach(function(marker) {
-      geocount += 1;
-      // create a DOM element for the marker
-      var el = document.createElement('div');
-      el.innerHTML += geocount;
-      el.className = 'marker';
-      el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
-      el.style.width = marker.properties.iconSize[0] + 'px';
-      el.style.height = marker.properties.iconSize[1] + 'px';
-      el.style.content = marker.properties.title;
+window.companies.forEach(function(company, index) {
+  var el = document.createElement('div');
+  el.innerHTML = index + 1;
+  el.className = 'marker';
+  el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+  el.style.width = 50 + 'px';
+  el.style.height = 50 + 'px';
 
-      el.addEventListener('click', function() {
-          window.alert(marker.properties.message);
-          // window.alert(marker.properties.title);
+  var handleClick = function() {
+    console.log('--------0r-0r-0r-0r-0r')
+    console.log(this.name);
+    window.companies.forEach(function(company) {
+      company.isHighlighted = false;
+    });
+    this.isHighlighted = true;
+  }.bind(company);
+
+  el.addEventListener('click', handleClick);
+
+  // add marker to map
+  new mapboxgl.Marker(el)
+    .setLngLat(company.coordinates)
+    .addTo(map);
+});
+
+rivets.bind(document.body, {
+  model: {
+    companies: window.companies,
+    handleCompanyClick: function(event, data) {
+      console.log('THIS COMPANY WAS CLICKED, ', data.company.name);
+      data.model.companies.forEach(function(company) {
+        company.isHighlighted = false;
       });
-
-      // add marker to map
-      new mapboxgl.Marker(el)
-          .setLngLat(marker.geometry.coordinates)
-          .addTo(map);
-  });
+      data.company.isHighlighted = true;
+    },
+  },
+});

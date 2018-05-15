@@ -14,7 +14,18 @@
   <div class="page-content">
     <div class="side-bar">
       <ol>
-        <li>
+        <li rv-each-company='model.companies' rv-on-click='model.handleCompanyClick' >
+          <div class="special-item">
+            <p class="special-text">{ company.name }</p>
+            <p class="address">{ company.address }</p>
+            <p class="special-instructions">{ company.specialInstructions }</p>
+          </div>
+          <div rv-if='company.isHighlighted' class='highlight'>
+            BOOM
+          </div>
+        </li>
+
+        <!-- <li>
           <div class="special-item">
             <p class="special-text">Kick-Off Party! @ WeWork</p>
             <p class="address">220 NW 8th Ave</p>
@@ -153,7 +164,7 @@
             <p class="special-instructions">test</p>
             <p class="company">Marquam</p>
           </div>
-        </li>
+        </li> -->
 
       </ol>
     </div>
@@ -188,7 +199,9 @@
     </div>
 
   </div>
+  <script src='assets/vendor/rivets.js'></script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+  <script src='assets/js/companies.js'></script>
   <script src='assets/js/app.js'></script>
 </body>
 </html>
