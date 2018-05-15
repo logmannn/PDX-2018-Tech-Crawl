@@ -173,18 +173,6 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 
 .smaller-screen-item {
   display: none;
-  background: #31435F;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 500px;
-  width: 100%;
-  border: 2px solid white;
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  margin-left: -271px;
-  color: #F5B536;
-  line-height: normal;
 }
 
 .smaller-screen-item div {
@@ -247,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     position: absolute;
     bottom: 8px;
     left: 50%;
-    margin-left: -172px;
+    margin-left: -200px;
     color: #F5B536;
   }
 }
