@@ -8,6 +8,7 @@ var map = new mapboxgl.Map({
   zoom: 15,
 });
 
+// mapObject = L.mapbox.map('mapDiv', undefined, options);
 // 45.524837,-122.6801553
 window.mapInstance = map;
 
@@ -29,7 +30,7 @@ window.companies.forEach(function(company, index) {
   el.className = 'marker';
   el.id = 'mCount'+count;
   el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
-  el.style.width = 50 + 'px';
+  el.style.width = 30 + 'px';
   el.style.height = 50 + 'px';
 
   var handleClick = function() {
