@@ -7,6 +7,7 @@ var map = new mapboxgl.Map({
   center: [-122.6801,45.5248],
   zoom: 15,
 });
+
 // 45.524837,-122.6801553
 window.mapInstance = map;
 
@@ -20,7 +21,7 @@ var geoControl = new mapboxgl.GeolocateControl({
   trackUserLocation: true
 });
 map.addControl(geoControl, 'top-left');
-var test;
+
 window.companies.forEach(function(company, index) {
   var count = index+1;
   var el = document.createElement('div');
@@ -32,10 +33,10 @@ window.companies.forEach(function(company, index) {
   el.style.height = 50 + 'px';
 
   var handleClick = function() {
-    if (test != undefined){
-      test.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
-    }
-    console.log(this.name);
+
+    console.log(this.coordinates);
+    // map.flyTo({center: this.coordinates});
+
     window.companies.forEach(function(company) {
       company.isHighlighted = false;
     });
@@ -44,10 +45,9 @@ window.companies.forEach(function(company, index) {
     var all = document.getElementsByClassName('marker');
     for (var i = 0; i < all.length; i++) {
       all[i].style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
-    }    
+    }
     el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
     // el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
-    test = el;
   }.bind(company);
 
   el.addEventListener('click', handleClick);
@@ -75,6 +75,8 @@ rivets.bind(document.body, {
     companies: window.companies,
     handleCompanyClick: function(event, data) {
       console.log('THIS COMPANY WAS CLICKED, ', data.index+1);
+      map.flyTo({center: data.model.companies[data.index].coordinates});
+      console.log(data.model.companies[data.index].coordinates);
       var item = data.index+1;
       data.model.companies.forEach(function(company) {
         company.isHighlighted = false;
