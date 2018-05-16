@@ -40,12 +40,13 @@ window.companies.forEach(function(company, index) {
   el.style.height = 50 + 'px';
 
   var handleClick = function() {
-    console.log('--------0r-0r-0r-0r-0r')
     console.log(this.name);
     window.companies.forEach(function(company) {
       company.isHighlighted = false;
+      el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
     });
     this.isHighlighted = true;
+    el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
   }.bind(company);
 
   el.addEventListener('click', handleClick);

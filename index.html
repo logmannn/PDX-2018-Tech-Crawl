@@ -15,6 +15,7 @@
     <div class="side-bar">
       <ol>
         <li rv-each-company='model.companies' rv-on-click='model.handleCompanyClick' >
+          highlighted-is-{ company.isHighlighted }
           <div class="special-item">
             <p class="special-text">{ company.name }</p>
             <p class="address">{ company.address }</p>
