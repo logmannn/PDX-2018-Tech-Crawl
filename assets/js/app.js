@@ -20,18 +20,9 @@ var geoControl = new mapboxgl.GeolocateControl({
   trackUserLocation: true
 });
 map.addControl(geoControl, 'top-left');
-
-// loop through the companies
-// var marker = new mapboxgl.Marker()
-//   .setLngLat([-122.6801,45.5248])
-//   .addTo(map);
-// marker = new mapboxgl.Marker()
-//   .setLngLat([-122.672913,45.5229])
-//   .addTo(map);
-  // 45.5229591,-122.672913
-
-
+var test;
 window.companies.forEach(function(company, index) {
+
   var el = document.createElement('div');
   el.innerHTML = index + 1;
   el.className = 'marker';
@@ -40,13 +31,18 @@ window.companies.forEach(function(company, index) {
   el.style.height = 50 + 'px';
 
   var handleClick = function() {
+    if (test != undefined){
+      test.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+    }
     console.log(this.name);
     window.companies.forEach(function(company) {
       company.isHighlighted = false;
-      el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
     });
     this.isHighlighted = true;
-    el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+
+    el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
+    // el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+    test = el;
   }.bind(company);
 
   el.addEventListener('click', handleClick);
@@ -56,6 +52,9 @@ window.companies.forEach(function(company, index) {
     .setLngLat(company.coordinates)
     .addTo(map);
 });
+
+// var myEl = document.getElementsByClassName('marker');
+// myEl.onclick = function(event){alert('Hello world');};
 
 rivets.bind(document.body, {
   model: {

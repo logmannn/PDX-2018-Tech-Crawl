@@ -269,6 +269,9 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   background: yellow
 }
 
+.test {
+  border: 1px solid white;
+}
 
 /************************************Media Queries************************************/
 
@@ -298,15 +301,16 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     position: absolute;
     bottom: 8px;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -170px;
     color: #F5B536;
+    z-index: 1;
   }
 }
 
 @media screen and (max-width: 450px) {
   .smaller-screen-item {
-    width: calc(100vw - 60px);
-    max-width: calc(100vw - 60px);
+    width: calc(100vw - 15px);
+    max-width: calc(100vw - 15px);
     margin-left: 8px;
     left: 0;
   }
