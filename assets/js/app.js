@@ -22,10 +22,11 @@ var geoControl = new mapboxgl.GeolocateControl({
 map.addControl(geoControl, 'top-left');
 var test;
 window.companies.forEach(function(company, index) {
-
+  var count = index+1;
   var el = document.createElement('div');
-  el.innerHTML = index + 1;
+  el.innerHTML = count;
   el.className = 'marker';
+  el.id = 'mCount'+count;
   el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
   el.style.width = 50 + 'px';
   el.style.height = 50 + 'px';
@@ -60,11 +61,17 @@ rivets.bind(document.body, {
   model: {
     companies: window.companies,
     handleCompanyClick: function(event, data) {
-      console.log('THIS COMPANY WAS CLICKED, ', data.company.name);
+      console.log('THIS COMPANY WAS CLICKED, ', data.index+1);
+      var item = data.index+1;
       data.model.companies.forEach(function(company) {
         company.isHighlighted = false;
       });
       data.company.isHighlighted = true;
+      var all = document.getElementsByClassName('marker');
+      for (var i = 0; i < all.length; i++) {
+        all[i].style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+      }
+      document.getElementById('mCount'+item).style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
     },
   },
 });

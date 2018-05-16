@@ -78,6 +78,36 @@ window.companies = [
       45.520805
     ],
     isHighlighted: false,
+  },
+  {
+    name: "USE OUR APP! NOT THAT WEBSITE",
+    address: "220 NW 8th Ave",
+    specialInstructions: "-enter through the side door off 9th & washington",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    name: "USE OUR APP! NOT THAT WEBSITE",
+    address: "220 NW 8th Ave",
+    specialInstructions: "-enter through the side door off 9th & washington",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    name: "USE OUR APP! NOT THAT WEBSITE",
+    address: "220 NW 8th Ave",
+    specialInstructions: "-enter through the side door off 9th & washington",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
   }
 
 ];

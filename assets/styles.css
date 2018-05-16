@@ -192,9 +192,11 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   margin-top: -50px;
 }
 
-.page-content .side-bar ol li div {
+.page-content .side-bar ol li div.special-item {
   margin-left: 15px;
   padding-right: 12px;
+  padding: 10px;
+  margin-top: -20px;
 }
 
 .page-content .side-bar ol li div p {
@@ -271,6 +273,47 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 
 .test {
   border: 1px solid white;
+}
+
+.highlight {
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  width: 25px;
+  background: #27B5A9;
+  position: relative;
+  top: -18px;
+  left: 17px;
+}
+
+.highlight+div.special-item {
+  border-left: 2px solid #27B5A9;
+  margin-top: -3px;
+  padding-top: 8px !important;
+  padding-left: 8px !important;
+  margin-bottom: -4px !important;
+}
+
+.highlight-down {
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  width: 25px;
+  background: #27B5A9;
+  position: relative;
+  top: 2px;
+  left: 17px;
+}
+
+.highlight-left {
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  width: 19px;
+  background: #27B5A9;
+  position: relative;
+  top: -61px;
+  left: -2px;
 }
 
 /************************************Media Queries************************************/
