@@ -14,7 +14,8 @@
   <div class="page-content">
     <div class="side-bar">
       <ol>
-        <li rv-each-company='model.companies' rv-on-click='model.handleCompanyClick' >
+        <li rv-each-company='model.companies' rv-on-click='model.handleCompanyClick'>
+          <div rv-id='index | increment' class="indexedItem"></div>
           <div rv-if='company.isHighlighted' class='highlight'></div>
           <div class="special-item">
             <p class="special-text">{ company.name }</p>
@@ -22,7 +23,7 @@
             <p class="special-instructions">{ company.specialInstructions }</p>
           </div>
           <div rv-if='company.isHighlighted' class='highlight-down'></div>
-          <div rv-if='company.isHighlighted' class='highlight-left'></div>          
+          <div rv-if='company.isHighlighted' class='highlight-left'></div>
         </li>
       </ol>
     </div>

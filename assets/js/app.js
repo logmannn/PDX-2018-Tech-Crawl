@@ -24,7 +24,7 @@ var test;
 window.companies.forEach(function(company, index) {
   var count = index+1;
   var el = document.createElement('div');
-  el.innerHTML = count;
+  el.innerHTML = '<div><a href="#'+count+'">'+count+'</a></div>';
   el.className = 'marker';
   el.id = 'mCount'+count;
   el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
@@ -40,7 +40,11 @@ window.companies.forEach(function(company, index) {
       company.isHighlighted = false;
     });
     this.isHighlighted = true;
-
+    // window.scrollTo(0, 415);
+    var all = document.getElementsByClassName('marker');
+    for (var i = 0; i < all.length; i++) {
+      all[i].style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+    }    
     el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
     // el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
     test = el;
@@ -56,6 +60,15 @@ window.companies.forEach(function(company, index) {
 
 // var myEl = document.getElementsByClassName('marker');
 // myEl.onclick = function(event){alert('Hello world');};
+
+rivets.formatters.increment = {
+  read: function(value) {
+    return value + 1;
+  },
+  publish: function(value) {
+    return value - 1;
+  }
+}
 
 rivets.bind(document.body, {
   model: {
