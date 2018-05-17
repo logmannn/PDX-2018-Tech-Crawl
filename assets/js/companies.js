@@ -93,7 +93,7 @@ window.companies = [
     name: "Say Media",
     specialInstructions: "\n",
     coordinates: [
-      -80.147297, 26.117350
+      -122.675522, 45.520040
     ],
     isHighlighted: false,
   },
@@ -129,7 +129,7 @@ window.companies = [
     name: "Lumen Learning",
     specialInstructions: "",
     coordinates: [
-      -104.995666, 39.738201
+      -122.68482, 45.527414
     ],
     isHighlighted: false,
   },
@@ -147,7 +147,7 @@ window.companies = [
     name: "Epicodus, Inc",
     specialInstructions: "",
     coordinates: [
-      -101.840929, 35.208540
+      -122.677398, 45.520622
     ],
     isHighlighted: false,
   },
@@ -195,7 +195,7 @@ window.companies = [
     name: "The Tech Academy",
     specialInstructions: "",
     coordinates: [
-      -116.968281, 44.023499
+      45.520849, -122.674856
     ],
     isHighlighted: false,
   },
@@ -217,7 +217,7 @@ window.companies = [
     name2: "Emerge Interactive",
     specialInstructions2: "",
     coordinates: [
-      -80.214823, 25.769468
+      -122.682974, 45.522232
     ],
     isHighlighted: false,
   },
@@ -226,7 +226,7 @@ window.companies = [
     name: "Pollinate",
     specialInstructions: "",
     coordinates: [
-      -92.47931, 44.026974
+      -122.682351, 45.522761
     ],
     isHighlighted: false,
   },
@@ -270,7 +270,7 @@ window.companies = [
     name: "Mambo Media",
     specialInstructions: "",
     coordinates: [
-      -111.496502, 40.643023
+      -122.679495, 45.526073
     ],
     isHighlighted: false,
   },
