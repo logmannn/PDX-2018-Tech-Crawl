@@ -195,7 +195,7 @@ window.companies = [
     name: "The Tech Academy",
     specialInstructions: "",
     coordinates: [
-      45.520849, -122.674856
+      -122.674856, 45.520849
     ],
     isHighlighted: false,
   },
