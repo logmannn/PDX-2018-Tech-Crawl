@@ -14,9 +14,9 @@
   <div class="page-content">
     <div class="side-bar">
       <ol>
-        <li rv-each-company='model.companies' rv-on-click='model.handleCompanyClick'>
+        <li class="side-bar-items" rv-each-company='model.companies' rv-on-click='model.handleCompanyClick'>
           <div rv-id='index | increment' class="indexedItem"></div>
-          <div rv-if='company.isHighlighted' class='highlight'></div>
+          <div rv-if='company.isHighlighted' class='highlight' id="highlight"></div>
           <div class="special-item">
             <p class="special-text">{ company.name }</p>
             <p class="address">{ company.address }</p>
@@ -30,13 +30,8 @@
 
     <div class="map" id='techcrawl-map'>
       <center class="smaller-screen-item">
-        <div class="company-number">
-          <p>21</p>
-          </div>
-          <div class="company-info">
-          <p class="address">220 NW 8th Ave</p>
-          <p class="special-instructions">-Enter through the east side door off 9th & Washington.</p>
-          <p class="company">Marquam</p>
+        <div id="side-bar2" class="company-number">
+
         </div>
       </center>
     </div>
@@ -46,7 +41,7 @@
   <div class="top-bar">
 
     <div class="top">
-      <div class="side-bar side-bar-top helvetica">
+      <div id="side-bar" class="side-bar side-bar-top helvetica">
         <h1>PDX</h1>
         <h2>TechCrawl</h2>
         <h1>2018</h1>

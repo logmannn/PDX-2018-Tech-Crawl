@@ -35,8 +35,10 @@ window.companies.forEach(function(company, index) {
 
   var handleClick = function() {
 
-    console.log(this.coordinates);
-    // map.flyTo({center: this.coordinates});
+    console.log(count);
+
+    // get items to show up in the below screen when the screen is small
+    map.flyTo({center: this.coordinates});
 
     window.companies.forEach(function(company) {
       company.isHighlighted = false;
@@ -49,6 +51,7 @@ window.companies.forEach(function(company, index) {
     }
     el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
     // el.style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
+
   }.bind(company);
 
   el.addEventListener('click', handleClick);

@@ -6,6 +6,14 @@
   .upper-case {text-transform: uppercase !important;}
   .bold {font-weight: bold}
   .weird-green {color: #27B5A9}
+  .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 /**/
 :root {
   --max-width: 1200px;
@@ -330,6 +338,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 .marker div a {
   color: white;
   text-decoration: none;
+  padding: 9px;
 }
 
 /************************************Media Queries************************************/
@@ -358,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     width: 100%;
     border: 2px solid white;
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     left: 50%;
     margin-left: -170px;
     color: #F5B536;
@@ -367,10 +376,10 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 }
 
 @media screen and (max-width: 450px) {
-  .smaller-screen-item {
+  /* .smaller-screen-item {
     width: calc(100vw - 15px);
     max-width: calc(100vw - 15px);
     margin-left: 8px;
     left: 0;
-  }
+  } */
 }
