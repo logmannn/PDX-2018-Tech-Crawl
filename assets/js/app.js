@@ -38,6 +38,10 @@ window.companies.forEach(function(company, index) {
     console.log(count);
 
     // get items to show up in the below screen when the screen is small
+    // console.log(document.getElementsByClassName('side-bar-items')[index].innerHTML);
+    document.getElementById('side-bar2').innerHTML = document.getElementsByClassName('side-bar-items')[index].innerHTML;
+
+
     map.flyTo({center: this.coordinates});
 
     window.companies.forEach(function(company) {
@@ -78,6 +82,7 @@ rivets.bind(document.body, {
   model: {
     companies: window.companies,
     handleCompanyClick: function(event, data) {
+
       console.log('THIS COMPANY WAS CLICKED, ', data.index+1);
       map.flyTo({center: data.model.companies[data.index].coordinates});
       console.log(data.model.companies[data.index].coordinates);
@@ -91,6 +96,7 @@ rivets.bind(document.body, {
         all[i].style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/number-icon.png)';
       }
       document.getElementById('mCount'+item).style.backgroundImage = 'url(https://email-assets.thedyrt.com/2017/images/gold-icon.png)';
+      document.getElementById('side-bar2').innerHTML =  document.getElementsByClassName('side-bar-items')[data.index].innerHTML;      
     },
   },
 });

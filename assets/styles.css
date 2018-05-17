@@ -344,9 +344,16 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 /************************************Media Queries************************************/
 
 @media screen and (max-width: 850px) {
-  .page-content .side-bar {
-    display: none
+  #side-bar2 {
+    line-height: normal;
+    padding: 10px;
   }
+  .highlight {display: none;}
+  .highlight + div.special-item {border-left: none}
+  .special-item p {margin: 0}
+
+
+  .page-content .side-bar {display: none}
 
   .map {
     margin-left: 0;

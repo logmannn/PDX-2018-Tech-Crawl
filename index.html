@@ -22,17 +22,14 @@
             <p class="address">{ company.address }</p>
             <p class="special-instructions">{ company.specialInstructions }</p>
           </div>
-          <div rv-if='company.isHighlighted' class='highlight-down'></div>
-          <div rv-if='company.isHighlighted' class='highlight-left'></div>
+          <div rv-if='company.isHighlighted' class='highlight-down highlight'></div>
+          <div rv-if='company.isHighlighted' class='highlight-left highlight'></div>
         </li>
       </ol>
     </div>
 
     <div class="map" id='techcrawl-map'>
-      <center class="smaller-screen-item">
-        <div id="side-bar2" class="company-number">
-
-        </div>
+      <center id="side-bar2" class="smaller-screen-item">
       </center>
     </div>
 
