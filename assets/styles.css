@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   display: inline-block;
   line-height: 53px;
   position: relative;
-  bottom: -50px;
+  bottom: -35px;
   left: -29px;
   background-repeat: no-repeat;
   background-position-x: 0.05em;
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   padding: 0;
   height: 2px;
   width: 19px;
-  background: #27B5A9;
+  /* background: #27B5A9; */
   position: relative;
   top: -61px;
   left: -2px;
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   }
   .highlight {display: none;}
   .highlight + div.special-item {border-left: none}
-  .special-item {margin-left: 50px;}
+  .special-item {margin-left: 45px;}
   .special-item p {margin: 0}
   .indexedItem {
     display: block;
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     position: absolute;
     bottom: 20px;
     left: 50%;
-    margin-left: -170px;
+    margin-left: -167px;
     color: #F5B536;
     z-index: 1;
   }
