@@ -333,7 +333,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 .indexedItem {
   position: absolute;
   color: #31435F;
-  margin-top: -30px;
+  margin-top: -28px;
+  font-size: 0;
 }
 
 .marker div a {
@@ -369,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     padding-top: 6px;
     text-align: center !important;
     padding-left: 0;
-    margin-top: 0px;      
+    margin-top: 0px;
   }
 
   .page-content .side-bar {display: none}
