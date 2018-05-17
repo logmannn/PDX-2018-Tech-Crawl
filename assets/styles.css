@@ -331,8 +331,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 }
 
 .indexedItem {
-  position: relative;
-  top: -17px;
+  display: none;
 }
 
 .marker div a {
@@ -350,8 +349,22 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   }
   .highlight {display: none;}
   .highlight + div.special-item {border-left: none}
+  .special-item {margin-left: 50px;}
   .special-item p {margin: 0}
-
+  .indexedItem {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-image: url('https://email-assets.thedyrt.com/2017/images/number-icon.png');
+    width: 27px;
+    height: 50px;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 6px;
+    text-align: center !important;
+    padding-left: 0;
+  }
 
   .page-content .side-bar {display: none}
 

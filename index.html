@@ -15,7 +15,7 @@
     <div class="side-bar">
       <ol>
         <li class="side-bar-items" rv-each-company='model.companies' rv-on-click='model.handleCompanyClick'>
-          <div rv-id='index | increment' class="indexedItem"></div>
+          <div rv-id='index | increment' class="indexedItem">{ index | increment }</div>
           <div rv-if='company.isHighlighted' class='highlight' id="highlight"></div>
           <div class="special-item">
             <p class="special-text">{ company.name }</p>
