@@ -10,8 +10,8 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "Marquam",
-    name: "11 SW Naito Parkway #600",
+    address: "11 SW Naito Parkway #600",
+    name: "Marquam",
     specialInstructions: "\n",
     coordinates: [
       -122.670719,
@@ -20,8 +20,8 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "Lytics",
-    name: "1000 SW Broadway",
+    address: "1000 SW Broadway",
+    name: "Lytics",
     specialInstructions: "\n",
     coordinates: [
       -122.670710,
@@ -60,8 +60,8 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "MYBOY",
-    name: "220 NW 8th Ave",
+    address: "621 SW Morrison St #1450",
+    name: "DreamHost",
     specialInstructions: "\n",
     coordinates: [
       -122.672710,
@@ -70,8 +70,8 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "USE OUR APP! NOT THAT WEBSITE",
-    name: "220 NW 8th Ave",
+    address: "311 SW Washington St",
+    name: "Squarespace",
     specialInstructions: "\n",
     coordinates: [
       -122.672710,
@@ -80,8 +80,8 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "USE OUR APP! NOT THAT WEBSITE",
-    name: "220 NW 8th Ave",
+    address: "319 SW Washington St #900",
+    name: "RADAR, Inc.",
     specialInstructions: "\n",
     coordinates: [
       -122.672710,
@@ -90,8 +90,8 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "USE OUR APP! NOT THAT WEBSITE",
-    name: "220 NW 8th Ave",
+    address: "428 SW 4th Ave 3rd Floor",
+    name: "Say Media",
     specialInstructions: "\n",
     coordinates: [
       -122.672710,
@@ -100,9 +100,273 @@ window.companies = [
     isHighlighted: false,
   },
   {
-    address: "USE OUR APP! NOT THAT WEBSITE",
-    name: "220 NW 8th Ave",
-    specialInstructions: "\n",
+    address: "610 SW Broadway #600",
+    name: "-Located on the 6th floor.",
+    specialInstructions: "CrowdStreet",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "711 SW Alder St #400",
+    name: "AppNexus",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "926 NW 13th Ave #300",
+    name: "Vacasa",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "600 NW 14th Ave #200",
+    name: "Lumen Learning",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "421 SW 6th Ave #700",
+    name: "Cedexis Inc.",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "400 SW 6th Ave #800",
+    name: "Epicodus, Inc",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "921 SW Washington St #820",
+    name: "Customer.io",
+    specialInstructions: "-Same office as Notion.",
+    newline1: "-",
+    address2: "921 SW Washington St #820",
+    name2: "Notion",
+    specialInstructions2: "-Enter through the east side door off 9th & Washington.",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "111 SW 5th Ave #3200",
+    name: "iovation, Inc.",
+    specialInstructions: "-Middle bank of elevators to the 32nd floor will be unlocked.",
+    newline1: "-",
+    address2: "111 SW 5th Ave",
+    name2: "New Relic",
+    specialInstructions2: "",
+    newline2: "-",
+    address3: "111 SW 5th Ave #1150",
+    name3: "Open Mesh",
+    specialInstructions3: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "1338 NW Hoyt St",
+    name: "ProFocus Technology",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "310 SW 4th Ave #412",
+    name: "The Tech Academy",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "1355 NW Everett St",
+    name: "Thinkful",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "412 SW 12th Avenue",
+    name: "Oregon BEST",
+    specialInstructions: "",
+    newline1: "-",
+    address2: "412 SW 12th Avenue",
+    name2: "Emerge Interactive",
+    specialInstructions2: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "315 SW 11th Ave #200",
+    name: "Pollinate",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "1120 NW Couch St #630",
+    name: "Acquia",
+    specialInstructions: "",
+    newline1: "-",
+    address2: "1120 NW Couch St #650",
+    name2: "AKQA",
+    specialInstructions2: "",
+    newline2: "-",
+    address3: "1120 NW Couch St #320",
+    name3: "Mozilla",
+    specialInstructions3: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
+    coordinates: [
+      -122.672710,
+      45.520805
+    ],
+    isHighlighted: false,
+  },
+  {
+    address: "",
+    name: "",
+    specialInstructions: "",
     coordinates: [
       -122.672710,
       45.520805
