@@ -331,13 +331,15 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
 }
 
 .indexedItem {
-  display: none;
+  position: absolute;
+  color: #31435F;
+  margin-top: -30px;
 }
 
 .marker div a {
   color: white;
   text-decoration: none;
-  padding: 9px;
+  padding: 7px;
 }
 
 .newline {
@@ -358,7 +360,6 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
   .indexedItem {
     display: block;
     position: absolute;
-    top: 15px;
     left: 15px;
     background-image: url('https://email-assets.thedyrt.com/2017/images/number-icon.png');
     width: 27px;
@@ -368,6 +369,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600}
     padding-top: 6px;
     text-align: center !important;
     padding-left: 0;
+    margin-top: 0px;      
   }
 
   .page-content .side-bar {display: none}

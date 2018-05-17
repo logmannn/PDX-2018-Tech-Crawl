@@ -84,8 +84,7 @@ window.companies = [
     name: "RADAR, Inc.",
     specialInstructions: "\n",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.675199, 45.519806
     ],
     isHighlighted: false,
   },
@@ -94,8 +93,7 @@ window.companies = [
     name: "Say Media",
     specialInstructions: "\n",
     coordinates: [
-      -122.672710,
-      45.520805
+      -80.147297, 26.117350
     ],
     isHighlighted: false,
   },
@@ -104,8 +102,7 @@ window.companies = [
     name: "-Located on the 6th floor.",
     specialInstructions: "CrowdStreet",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.679151, 45.519701
     ],
     isHighlighted: false,
   },
@@ -114,8 +111,7 @@ window.companies = [
     name: "AppNexus",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.679422, 45.520279
     ],
     isHighlighted: false,
   },
@@ -124,8 +120,7 @@ window.companies = [
     name: "Vacasa",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.684222, 45.529878
     ],
     isHighlighted: false,
   },
@@ -134,8 +129,7 @@ window.companies = [
     name: "Lumen Learning",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -104.995666, 39.738201
     ],
     isHighlighted: false,
   },
@@ -144,8 +138,7 @@ window.companies = [
     name: "Cedexis Inc.",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.67803, 45.520823
     ],
     isHighlighted: false,
   },
@@ -154,8 +147,7 @@ window.companies = [
     name: "Epicodus, Inc",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -101.840929, 35.208540
     ],
     isHighlighted: false,
   },
@@ -168,8 +160,7 @@ window.companies = [
     name2: "Notion",
     specialInstructions2: "-Enter through the east side door off 9th & Washington.",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.680792, 45.521366
     ],
     isHighlighted: false,
   },
@@ -186,8 +177,7 @@ window.companies = [
     name3: "Open Mesh",
     specialInstructions3: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.676291, 45.522187
     ],
     isHighlighted: false,
   },
@@ -196,8 +186,7 @@ window.companies = [
     name: "ProFocus Technology",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.684999, 45.526972
     ],
     isHighlighted: false,
   },
@@ -206,8 +195,7 @@ window.companies = [
     name: "The Tech Academy",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -116.968281, 44.023499
     ],
     isHighlighted: false,
   },
@@ -216,8 +204,7 @@ window.companies = [
     name: "Thinkful",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.684711, 45.525200
     ],
     isHighlighted: false,
   },
@@ -230,8 +217,7 @@ window.companies = [
     name2: "Emerge Interactive",
     specialInstructions2: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -80.214823, 25.769468
     ],
     isHighlighted: false,
   },
@@ -240,8 +226,7 @@ window.companies = [
     name: "Pollinate",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -92.47931, 44.026974
     ],
     isHighlighted: false,
   },
@@ -258,120 +243,53 @@ window.companies = [
     name3: "Mozilla",
     specialInstructions3: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.682756, 45.523530
     ],
     isHighlighted: false,
   },
   {
-    address: "",
-    name: "",
+    address: "209 NW 4th Ave #200",
+    name: "moovel",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.674589, 45.524738
     ],
     isHighlighted: false,
   },
   {
-    address: "",
-    name: "",
-    specialInstructions: "",
+    address: "334 NW 11 Ave 2nd Floor",
+    name: "Cloudability",
+    specialInstructions: "-Enter through the garage door on the Flanders St side of the building.",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.682012, 45.525620
     ],
     isHighlighted: false,
   },
   {
-    address: "",
-    name: "",
+    address: "45.526073, -122.679495",
+    name: "Mambo Media",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -111.496502, 40.643023
     ],
     isHighlighted: false,
   },
   {
-    address: "",
-    name: "",
+    address: "520 NW Davis St #200",
+    name: "NurseGrid",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
+      -122.675853, 45.524318
     ],
     isHighlighted: false,
   },
   {
-    address: "",
-    name: "",
+    address: "910 NW 14th Ave",
+    name: "On Deck After Party!",
     specialInstructions: "",
     coordinates: [
-      -122.672710,
-      45.520805
-    ],
-    isHighlighted: false,
-  },
-  {
-    address: "",
-    name: "",
-    specialInstructions: "",
-    coordinates: [
-      -122.672710,
-      45.520805
-    ],
-    isHighlighted: false,
-  },
-  {
-    address: "",
-    name: "",
-    specialInstructions: "",
-    coordinates: [
-      -122.672710,
-      45.520805
-    ],
-    isHighlighted: false,
-  },
-  {
-    address: "",
-    name: "",
-    specialInstructions: "",
-    coordinates: [
-      -122.672710,
-      45.520805
-    ],
-    isHighlighted: false,
-  },
-  {
-    address: "",
-    name: "",
-    specialInstructions: "",
-    coordinates: [
-      -122.672710,
-      45.520805
-    ],
-    isHighlighted: false,
-  },
-  {
-    address: "",
-    name: "",
-    specialInstructions: "",
-    coordinates: [
-      -122.672710,
-      45.520805
-    ],
-    isHighlighted: false,
-  },
-  {
-    address: "",
-    name: "",
-    specialInstructions: "",
-    coordinates: [
-      -122.672710,
-      45.520805
+      -122.685153, 45.529647
     ],
     isHighlighted: false,
   }
-
 ];
