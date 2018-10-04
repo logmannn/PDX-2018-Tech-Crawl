@@ -1,6 +1,6 @@
 # PDX TechCrawl 2018
 
-<p>Currently only a static site that was suggested by The Dyrt as a tool for the TechCrawl 2018 users to see map items</p>
+<p>A static site that was suggested by The Dyrt as a tool for the TechCrawl 2018 users to see map items</p>
 
 <h2>Tools Used</h2>
 <ul>
